@@ -1,4 +1,5 @@
 FROM mysql:5.7.38
+COPY ./my.cnf   /etc/
 COPY ./mysql.cnf /etc/mysql/conf.d/
 COPY ./mysqld.cnf /etc/mysql/mysql.conf.d/
 
